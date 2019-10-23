@@ -103,6 +103,47 @@
           <p>- 6,000+ registered users on our website (<a href="https://usarrp.net" target="_blank">https://usarrp.net</a>)</p>
           <p>- Hundreds of daily players</p>
           <p><a href="https://discord.gg/aDmdVdW" target="_blank"><img src="https://discordapp.com/api/guilds/297566457468944384/widget.png?style=banner2" alt="Official Discord"  style="max-width:300px"></a></p>
+          <div class="w3-content w3-display-container">
+
+            <div class="w3-display-container mySlides">
+              <img src="images/3.png" width="100%">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                Implemented an in-game police MDT (Mobile Data Terminal). Uses Lua to make API calls to our database and communicates to/from the front end which is built using Vue.js as a framework to simplify development.
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="images/1.jpg" width="100%">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                Built an in-game inventory system from scratch. Again, using Lua to make API calls to our database and communicates to/from the front end which is built using Vue.js as a framework to simplify development.
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="images/4.png" width="100%">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                Built an in-game store where players can make purchases to unlock certain features or items. Again, using Lua for server side logic and Vue.js as a front end framework to simplify development.
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="images/7.png" width="100%">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                Built a custom "racing" script where players can host races anywhere around the map. Uses Vue.js as a front end framework and Lua for server sided logic.
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="images/8.jpg" width="100%">
+              <div class="w3-large w3-container w3-padding-16 w3-black">
+                Built a custom multiple-character / character-selection server sided framework using Lua + front end using Vue.js.
+              </div>
+            </div>
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+            
+            </div>
           <hr>
         </div>
         <div class="w3-container">
@@ -147,6 +188,26 @@
   <a href="https://www.linkedin.com/in/joshua-yolles-7a0a26104/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   <p>Created with <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
 
 </body>
 </html>
